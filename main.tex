@@ -1,0 +1,36 @@
+\documentclass{standalone}
+
+\usepackage{xcolor}
+\usepackage{array,multirow}
+\usepackage{colortbl}
+
+\definecolor{plt1}{RGB}{31, 119, 180}
+\definecolor{plt2}{RGB}{255, 127, 14}
+\definecolor{plt3}{RGB}{44, 160, 44}
+\definecolor{plt4}{RGB}{214, 39, 40}
+\definecolor{plt5}{RGB}{148, 103, 189}
+
+\newcommand{\cola}[1]{\textcolor{plt1}{#1}}
+\newcommand{\colb}[1]{\textcolor{plt2}{#1}}
+\newcommand{\colc}[1]{\textcolor{plt3}{#1}}
+\newcommand{\cold}[1]{\textcolor{plt4}{#1}}
+\newcommand{\cole}[1]{\textcolor{plt5}{#1}}
+
+\begin{document}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline {\multirow{2.1}{*}{\textbf{Project Name}} 
+} & \multicolumn{2}{c|}{\textbf{2025}} & \multicolumn{4}{c}{\textbf{2026}} & \multicolumn{4}{|c}{\textbf{2027}} & \multicolumn{2}{|c|}{\textbf{2028}} \\
+\cline{2-13} & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 \\
+\hline 1 &\cellcolor{plt1!90}& \cellcolor{plt1!90}&\cellcolor{plt1!90}&\cellcolor{plt1!90}&\cellcolor{plt1!90}&\cellcolor{plt1!90}&\cellcolor{plt1!90}& \cellcolor{plt1!90}&\cellcolor{plt1!90}&\cellcolor{plt1!90}&\cellcolor{plt1!90}&\cellcolor{plt1!90} \\
+\hline 2 & \cellcolor{plt1!80}&\cellcolor{plt1!80}&\cellcolor{plt1!80}& & & & & & & & & \\
+\hline 3 & & & &\cellcolor{plt1!70} & \cellcolor{plt1!70}& \cellcolor{plt1!70}& & & & & & \\
+\hline 4 & & & & & & & \cellcolor{plt1!60}& \cellcolor{plt1!60}& \cellcolor{plt1!60}& & & \\
+\hline 5 & \cellcolor{plt2!80}& \cellcolor{plt2!80}& \cellcolor{plt2!80}&\cellcolor{plt2!80} & & & & & & & & \\
+\hline 6 & & & & &\cellcolor{plt2!60} & \cellcolor{plt2!60}& \cellcolor{plt2!60}& \cellcolor{plt2!60}& \cellcolor{plt2!60}& \cellcolor{plt2!60}& \cellcolor{plt2!60}&\cellcolor{plt2!60} \\
+\hline 7 &\cellcolor{plt3!80}& \cellcolor{plt3!80}&\cellcolor{plt3!80} &\cellcolor{plt3!80} &\cellcolor{plt3!80} & \cellcolor{plt3!80}& & & & & & \\
+\hline 7 & & & & & & & \cellcolor{plt3!60}&\cellcolor{plt3!60} &\cellcolor{plt3!60} &\cellcolor{plt3!60} &\cellcolor{plt3!60} &\cellcolor{plt3!60} \\
+\hline
+\end{tabular}
+
+\end{document}
